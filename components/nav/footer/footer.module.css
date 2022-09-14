@@ -1,0 +1,5 @@
+.container {
+    height: var(--footer-height);
+    width: 100%;
+    background-color:cadetblue;
+}
