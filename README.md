@@ -1,3 +1,14 @@
+https://nextjs.org/docs/getting-started
+
+https://nextjs.org/docs/api-reference/create-next-app
+
+https://nextjs.org/docs/basic-features/pages
+https://nextjs.org/docs/routing/dynamic-routes
+https://nextjs.org/docs/basic-features/layouts
+
+https://jsonplaceholder.typicode.com/guide/
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
