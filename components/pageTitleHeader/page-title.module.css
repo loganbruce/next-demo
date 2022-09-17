@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    padding: 0.5em 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+    width: 100%;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+
+.navigation p {
+    cursor: pointer;
+    color: rgb(205, 205, 205);
+}
+
+.container h3 {
+    font-size: 3em;
+    padding-top: 1em;
+    max-width: 1000px;
+    text-align: center;
+}

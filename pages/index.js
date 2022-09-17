@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { PageTitleHeader } from '../components/pageTitleHeader/PageTitleHeader'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  const [isLoading, setIsLoading] = useState(true)
+  const [name, setName] = useState('... wait ... who are you?')
 
   return (
     <div className={styles.container}>
@@ -16,11 +17,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-    <Link href='/graduates'>View all graduates ... </Link>
+    <PageTitleHeader title="next js demo home" navigation={false}/>
 
 
-    <p>This is a test button to show state</p>
-    {isLoading ? <button onClick={()=>{setIsLoading(!isLoading)}}>Click me to start loading</button> : <p onClick={()=>{setIsLoading(!isLoading)}}>loading ...</p>}
+    <div className={styles.introArea}>
+      <h4>Hey! Welcome {name}</h4>
+      <input onChange={(e)=>{setName(e.target.value)}} type="text" placeholder='enter your name' />
+    </div>
+
+    <div className={styles.homeBody}>
+      <div className={styles.options}>
+      <Link href='/articles'>
+        <div className={styles.option}>
+          view all articles 
+        </div>
+      </Link>
+      <Link href='/about'>
+        <div className={styles.option}>
+          view about
+        </div>
+      </Link>
+      </div>
+    </div>
     </div>
   )
 }

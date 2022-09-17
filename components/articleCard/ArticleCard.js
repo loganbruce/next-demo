@@ -7,21 +7,30 @@ import { useEffect, useState } from "react";
 // COMPONENT IMPORTS ========================================================================= // 
 
 // STYLES ==================================================================================== // 
-import styles from './grad-card.module.css'
+import styles from './article-card.module.css'
 
 // RESOURCES ================================================================================= // 
 
 
 /* 
-Component Name:
+Component Name: Article Card
 
-Author:
+Author: Logan Trundle
 Collaborators:
-Version #:
-Date Created:
+Version #: 1.0.0
+Date Created: 16/09/2022
 Date Updated:
 
 Overview: 
+This component is displays a card with a title of an article and a link to it.
+When being called it takes in a prop (data) which is a Article object.
+
+    data = {
+        body: string,
+        id: number,
+        title: string,
+        userId: number
+    }
 */
 
 
@@ -37,7 +46,12 @@ export const GradCard = ({data}) => {
             <div className={styles.container}>
                 <h4>{data.title}</h4>
 
-                <Link className={styles.cardLink} href={`/graduates/${data.id}`}>View Graduate</Link>
+                <Link href={`/articles/${data.id}`}>
+                    <a className={styles.cardLink}>
+                        View Article
+                    </a>
+                </Link>
+
             </div>
         )
 }
