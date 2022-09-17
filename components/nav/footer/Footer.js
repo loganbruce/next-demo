@@ -12,15 +12,15 @@ import styles from './footer.module.css'
 
 
 /* 
-Component Name:
+Component Name: Footer
 
-Author:
+Author: Logan Trundle
 Collaborators:
-Version #:
-Date Created:
+Version #: 1.0.0
+Date Created: 16/09/2022
 Date Updated:
 
-Overview: 
+Overview:
 */
 
 

@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 
 // NEXT IMPORTS ============================================================================== // 
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 // COMPONENT IMPORTS ========================================================================= // 
 
@@ -12,12 +14,12 @@ import styles from './navbar.module.css'
 
 
 /* 
-Component Name:
+Component Name: Navbar
 
-Author:
+Author: Logan Trundle
 Collaborators:
-Version #:
-Date Created:
+Version #: 1.0.0
+Date Created: 16/09/2022
 Date Updated:
 
 Overview: 
@@ -27,6 +29,7 @@ Overview:
 export const Navbar = () => {
 
     // VARIABLES ============================================================================== // 
+    const router = useRouter();
 
     // COMPONENT INIT ========================================================================= // 
     useEffect(() => {}, []);
@@ -34,7 +37,18 @@ export const Navbar = () => {
     // RENDER ================================================================================= // 
     return (
             <nav className={styles.container}>
-                hello nav
+                <div className={styles.logo}>FAKE LOGO</div>
+                <div className={styles.links_container}>
+                    <Link href='/'>
+                        <a className={router.pathname === '/' ? `${styles.link_active}` : ""}>home</a>
+                    </Link>
+                    <Link href='/articles'>
+                        <a className={router.pathname.startsWith('/articles') ? `${styles.link_active}` : ""}>articles</a>
+                    </Link>
+                    <Link href='/about'>
+                        <a className={router.pathname.startsWith('/about') ? `${styles.link_active}` : ""}>about</a>
+                    </Link>
+                </div>
             </nav>
         )
 }

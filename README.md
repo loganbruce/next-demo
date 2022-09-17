@@ -1,45 +1,26 @@
-https://nextjs.org/docs/getting-started
+Hey Everyone ! 
 
-https://nextjs.org/docs/api-reference/create-next-app
+This is a quick demo I put together using Next JS as a small introduction. 
 
-https://nextjs.org/docs/basic-features/pages
-https://nextjs.org/docs/routing/dynamic-routes
-https://nextjs.org/docs/basic-features/layouts
-
-https://jsonplaceholder.typicode.com/guide/
-
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+To get started and run the app first run 
 
 ```bash
+npm install
+# and then
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will install dependencies and start the development server on [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Things to note
+1. First check out the [Pages] folder. These files relate to routes on the app. For example about.js creates a route [http://localhost:3000/about](http://localhost:3000/about). 
+2. Next note the [styles] folder. Styles for pages should go in this folder whereas styles for components should be put together with the component js file. 
+3. Speaking of, components allow us to create reusable elements through out app. Similar to lit-html which you would have used in the Vanilla-SPA.
+4. The structure and more of the minute details may take some getting used to but as you can see, building up each page is quite similar to the html and css we are already quite used to. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Here are some links about next js if you are want to read further and understand more details.
+- [https://nextjs.org/docs/getting-started](https://nextjs.org/docs/getting-started)
+- [https://nextjs.org/docs/basic-features/pages](https://nextjs.org/docs/basic-features/pages)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any questions please feel free to ask
