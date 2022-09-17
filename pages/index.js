@@ -1,13 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 import { useState } from 'react'
+import Head from 'next/head'
+import Link from 'next/link'
 import { PageTitleHeader } from '../components/pageTitleHeader/PageTitleHeader'
 import styles from '../styles/Home.module.css'
 
+// THIS IS THE MAIN HOME PAGE
+
 export default function Home() {
 
+  // this is called state. We can use this to store data. when it changes the page/component will re render
   const [name, setName] = useState('... wait ... who are you?')
+
+  
 
   return (
     <div className={styles.container}>
@@ -17,6 +21,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+    {/* 
+    This is a custom component that I created which can be found in the components folder. 
+    In order to mkae use of we import it in the file we are in (as seen above).
+    We can pass props to the components such as data or booleans
+     */}
     <PageTitleHeader title="next js demo home" navigation={false}/>
 
 
